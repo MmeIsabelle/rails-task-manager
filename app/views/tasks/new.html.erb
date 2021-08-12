@@ -2,5 +2,9 @@
 <%= simple_form_for(@task) do |f| %>
   <%= f.input :title %>
   <%= f.input :details %>
-  <%= f.submit %>
+  <%= f.submit class:"btn btn-primary" %>
+<% end %>
+<hr>
+<%= link_to tasks_path do %>
+  <i class="fas fa-undo"></i> Back to list
 <% end %>
